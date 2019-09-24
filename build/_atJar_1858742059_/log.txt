@@ -1,5 +1,0 @@
-Args: "--inJar", "/home/miu/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.0/forge-1.14.4-28.1.0-injected.jar", "--outJar", "/home/miu/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.0_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.1.0_mapped_snapshot_20190719-1.14.3.jar", "--logFile", "accesstransform.log", "--atFile", "/home/miu/Desktop/Forge-Your-World-1.X-to-X.X/build/_atJar_1858742059_/parent_at.cfg"
-Classpath: /home/miu/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/0.14.4/accesstransformers-0.14.4-fatjar.jar
-WorkDir: /home/miu/Desktop/Forge-Your-World-1.X-to-X.X/build/_atJar_1858742059_
-Main: net.minecraftforge.accesstransformer.TransformerProcessor
-====================================
