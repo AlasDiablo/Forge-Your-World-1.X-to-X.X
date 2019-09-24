@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "half=top": { "model": "end_bricks" },
-		"half=bottom": { "model": "end_bricks" }
-    }
-}

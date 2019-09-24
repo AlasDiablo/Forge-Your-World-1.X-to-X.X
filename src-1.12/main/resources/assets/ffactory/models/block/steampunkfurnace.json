@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "ffactory:blocks/steampunk_furnace_side",
-        "front": "ffactory:blocks/steampunk_furnace_front_off",
-        "side": "ffactory:blocks/steampunk_furnace_side"
-    }
-}

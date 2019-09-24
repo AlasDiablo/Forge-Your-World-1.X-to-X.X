@@ -1,8 +1,0 @@
-{
-    "parent": "block/half_slab",
-    "textures": {
-        "bottom": "fdecostuff:blocks/brick/granitebrick",
-        "top": "fdecostuff:blocks/brick/granitebrick",
-        "side": "fdecostuff:blocks/brick/granitebrick"
-    }
-}

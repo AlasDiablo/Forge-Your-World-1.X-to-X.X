@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "half=bottom": { "model": "fdecostuff:diorite_slab_bottom" },
-        "half=top": { "model": "fdecostuff:diorite_slab_top" }
-    }
-}

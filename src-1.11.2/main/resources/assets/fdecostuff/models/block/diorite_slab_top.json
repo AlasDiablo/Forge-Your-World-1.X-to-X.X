@@ -1,8 +1,0 @@
-{
-    "parent": "block/upper_slab",
-    "textures": {
-        "bottom": "fdecostuff:blocks/brick/dioritebrick",
-        "top": "fdecostuff:blocks/brick/dioritebrick",
-        "side": "fdecostuff:blocks/brick/dioritebrick"
-    }
-}

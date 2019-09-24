@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "ffactory:lit_ironfurnace" },
-        "facing=south": { "model": "ffactory:lit_ironfurnace", "y": 180 },
-        "facing=west":  { "model": "ffactory:lit_ironfurnace", "y": 270 },
-        "facing=east":  { "model": "ffactory:lit_ironfurnace", "y": 90 }
-    }
-}

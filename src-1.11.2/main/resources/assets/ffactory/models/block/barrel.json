@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "ffactory:blocks/barrel_top",
-        "front": "ffactory:blocks/barrel_front_off",
-        "side": "ffactory:blocks/barrel_side"
-    }
-}
