@@ -1,4 +1,4 @@
-## 2.3.13a-alpha - Update to 1.14.4
+## 2.2.13a-alpha - Update to 1.14.4
 - add core mod
 
 ## 1.2.12
