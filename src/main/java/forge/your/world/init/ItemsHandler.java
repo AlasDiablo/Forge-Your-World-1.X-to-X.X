@@ -7,6 +7,8 @@ import net.minecraftforge.fml.common.Mod;
 
 public class ItemsHandler {
 
+    // add terillium & terillium raw
+
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
         @SubscribeEvent
