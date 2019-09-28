@@ -1,5 +1,6 @@
 package forge.your.world.init;
 
+import forge.your.world.ForgeYourWorld;
 import forge.your.world.blocks.BasicOre;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -26,7 +27,7 @@ public class BlocksHandler {
         }
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
-            Item.Properties properties = new Item.Properties();//.group(JANOEO.setup.janoeoOreGroup);
+            Item.Properties properties = new Item.Properties().group(ForgeYourWorld.fywGroup);
             event.getRegistry().register(new BlockItem(TERILLIUM_ORE, properties).setRegistryName(RegisteryHolder.TERILLIUM_ORE));
             event.getRegistry().register(new BlockItem(TERILLIUM_BLOCK, properties).setRegistryName(RegisteryHolder.TERILLIUM_BLOCK));
         }
