@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "forgeyourworld:terillium"
+    ]
+  },
+  "criteria": {
+    "has_raw_terillium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:gems/raw_terillium"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "forgeyourworld:terillium"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_terillium",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "forgeyourworld:terillium_ore"
+  },
+  "result": "forgeyourworld:terillium",
+  "experience": 0.1,
+  "cookingtime": 100
+}

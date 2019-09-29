@@ -1,4 +1,11 @@
-## 2.2.13a-alpha - Update to 1.14.4
+## 2.2.13b-alpha
+- add terillium armor material
+- port terillium
+- port raw terillium
+- add loot table
+- add tag
+
+## 2.2.13a-alpha
 - add core mod
 - port terillium ore (no drop)
 - port terillium block (no craft)

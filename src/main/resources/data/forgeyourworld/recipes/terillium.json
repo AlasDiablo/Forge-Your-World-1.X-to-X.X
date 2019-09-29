@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "RTR",
+    " G "
+  ],
+  "key": {
+    "T": {
+      "tag": "forge:gems/raw_terillium"
+    },
+    "G": {
+      "tag": "forge:dusts/glowstone"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "result": {
+    "item": "forgeyourworld:terillium"
+  }
+}

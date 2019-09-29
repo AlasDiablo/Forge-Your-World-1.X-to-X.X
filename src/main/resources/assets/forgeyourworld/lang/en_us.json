@@ -1,5 +1,6 @@
 {
-  "": "",
-  "": "",
-  "": ""
+  "block.forgeyourworld.terillium_ore": "Terillium Ore",
+  "block.forgeyourworld.terillium_block": "Terillium Block",
+  "item.forgeyourworld.terillium": "Terillium",
+  "item.forgeyourworld.raw_terillium": "Raw Terillium"
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/terillium"
+    }
+  ],
+  "result": {
+    "item": "forgeyourworld:terillium",
+    "count": 9
+  }
+}

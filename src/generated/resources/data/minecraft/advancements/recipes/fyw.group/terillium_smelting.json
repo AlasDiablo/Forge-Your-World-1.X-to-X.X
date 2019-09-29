@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:terillium_smelting"
+    ]
+  },
+  "criteria": {
+    "has_terillium_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "forgeyourworld:terillium_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:terillium_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_terillium_ore",
+      "has_the_recipe"
+    ]
+  ]
+}
