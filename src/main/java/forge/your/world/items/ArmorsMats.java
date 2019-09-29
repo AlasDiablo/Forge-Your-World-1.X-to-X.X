@@ -20,7 +20,7 @@ public enum ArmorsMats implements IArmorMaterial {
     private SoundEvent soundEvent;
     private float toughness;
 
-    private ArmorsMats(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairItem, SoundEvent soundEvent, float toughness) {
+    ArmorsMats(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairItem, SoundEvent soundEvent, float toughness) {
         final int[] max_damge_arry = new int[] {13, 15, 16, 11};
         this.damageReductionAmount = damageReductionAmount;
         this.toughness = toughness;

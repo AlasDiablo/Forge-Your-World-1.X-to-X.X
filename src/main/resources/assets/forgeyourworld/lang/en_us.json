@@ -2,5 +2,9 @@
   "block.forgeyourworld.terillium_ore": "Terillium Ore",
   "block.forgeyourworld.terillium_block": "Terillium Block",
   "item.forgeyourworld.terillium": "Terillium",
-  "item.forgeyourworld.raw_terillium": "Raw Terillium"
+  "item.forgeyourworld.raw_terillium": "Raw Terillium",
+  "item.forgeyourworld.terillium_helmet": "Terillium helmet",
+  "item.forgeyourworld.terillium_chestplate": "Terillium chestplate",
+  "item.forgeyourworld.terillium_leggings": "Terillium leggings",
+  "item.forgeyourworld.terillium_boots": "Terillium boots"
 }

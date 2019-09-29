@@ -1,3 +1,6 @@
+## 2.2.13c-alpha
+- add terillium armor
+
 ## 2.2.13b-alpha
 - add terillium armor material
 - port terillium

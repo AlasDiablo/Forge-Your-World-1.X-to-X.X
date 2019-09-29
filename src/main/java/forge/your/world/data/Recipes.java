@@ -51,6 +51,36 @@ public class Recipes extends RecipeProvider {
                 .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
                 .build(consumer);
 
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_HELMET)
+                .key('T', ItemsTags.TERILLIUM)
+                .patternLine("TTT")
+                .patternLine("T T")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_CHESTPLATE)
+                .key('T', ItemsTags.TERILLIUM)
+                .patternLine("T T")
+                .patternLine("TTT")
+                .patternLine("TTT")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_LEGGINGS)
+                .key('T', ItemsTags.TERILLIUM)
+                .patternLine("TTT")
+                .patternLine("T T")
+                .patternLine("T T")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_BOOTS)
+                .key('T', ItemsTags.TERILLIUM)
+                .patternLine("T T")
+                .patternLine("T T")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
+
     }
 
     public void shapelessRecipe(Consumer<IFinishedRecipe> consumer) {

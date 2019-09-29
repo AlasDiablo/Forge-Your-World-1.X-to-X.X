@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "forgeyourworld:terillium_helmet"
+    ]
+  },
+  "criteria": {
+    "has_terillium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:gems/terillium"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "forgeyourworld:terillium_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_terillium",
+      "has_the_recipe"
+    ]
+  ]
+}

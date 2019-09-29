@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "T T",
+    "TTT",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "tag": "forge:gems/terillium"
+    }
+  },
+  "result": {
+    "item": "forgeyourworld:terillium_chestplate"
+  }
+}
