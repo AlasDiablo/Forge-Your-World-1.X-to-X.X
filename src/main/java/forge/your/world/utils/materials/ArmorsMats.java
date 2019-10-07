@@ -1,4 +1,4 @@
-package forge.your.world.items;
+package forge.your.world.utils.materials;
 
 import forge.your.world.init.RegisteryHolder;
 import net.minecraft.inventory.EquipmentSlotType;

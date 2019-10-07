@@ -1,4 +1,4 @@
-package forge.your.world.items;
+package forge.your.world.utils.tags;
 
 import net.minecraft.item.Item;
 import net.minecraft.tags.ItemTags;

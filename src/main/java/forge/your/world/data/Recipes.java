@@ -2,7 +2,7 @@ package forge.your.world.data;
 
 import forge.your.world.init.BlocksHandler;
 import forge.your.world.init.ItemsHandler;
-import forge.your.world.items.ItemsTags;
+import forge.your.world.utils.tags.ItemsTags;
 import net.minecraft.data.*;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;

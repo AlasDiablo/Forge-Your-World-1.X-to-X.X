@@ -11,4 +11,5 @@ public class RegisteryHolder {
     static final String TERILLIUM_CHESTPLATE   = "terillium_chestplate";
     static final String TERILLIUM_LEGGINGS     = "terillium_leggings";
     static final String TERILLIUM_BOOTS        = "terillium_boots";
+    static final String TERILLIUM_PICKAXE      = "terillium_pickaxe";
 }

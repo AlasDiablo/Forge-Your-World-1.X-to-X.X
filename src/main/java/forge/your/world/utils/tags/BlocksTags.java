@@ -1,4 +1,4 @@
-package forge.your.world.blocks;
+package forge.your.world.utils.tags;
 
 import net.minecraft.block.Block;
 import net.minecraft.tags.BlockTags;
