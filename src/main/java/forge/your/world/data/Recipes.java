@@ -43,6 +43,7 @@ public class Recipes extends RecipeProvider {
                 .patternLine(" G ")
                 .addCriterion("has_raw_terillium", this.hasItem(ItemsTags.RAW_TERILLIUM))
                 .build(consumer);
+
         ShapedRecipeBuilder.shapedRecipe(BlocksHandler.TERILLIUM_BLOCK)
                 .key('T', ItemsTags.TERILLIUM)
                 .patternLine("TTT")
@@ -81,6 +82,14 @@ public class Recipes extends RecipeProvider {
                 .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
                 .build(consumer);
 
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_PICKAXE)
+                .key('T', ItemsTags.TERILLIUM)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("TTT")
+                .patternLine(" S ")
+                .patternLine(" S ")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
     }
 
     public void shapelessRecipe(Consumer<IFinishedRecipe> consumer) {
@@ -91,13 +100,11 @@ public class Recipes extends RecipeProvider {
     }
 
     private void oreSmelting(Consumer<IFinishedRecipe> consumer) {
-        // trillium
         CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlocksHandler.TERILLIUM_ORE), ItemsHandler.TERILLIUM, 0.1f, 200)
                 .addCriterion("has_terillium_ore", this.hasItem(BlocksHandler.TERILLIUM_ORE)).build(consumer, "terillium_smelting");
     }
 
     private void oreBlasting(Consumer<IFinishedRecipe> consumer) {
-        // trillium
         CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlocksHandler.TERILLIUM_ORE), ItemsHandler.TERILLIUM, 0.1f, 100)
                 .addCriterion("has_terillium_ore", this.hasItem(BlocksHandler.TERILLIUM_ORE)).build(consumer, "terillium_blasting");
     }

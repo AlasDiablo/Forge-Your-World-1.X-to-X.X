@@ -12,4 +12,8 @@ public class RegisteryHolder {
     static final String TERILLIUM_LEGGINGS     = "terillium_leggings";
     static final String TERILLIUM_BOOTS        = "terillium_boots";
     static final String TERILLIUM_PICKAXE      = "terillium_pickaxe";
+    static final String TERILLIUM_SHOVEL       = "terillium_shovel";
+    static final String TERILLIUM_SWORD        = "terillium_sword";
+    static final String TERILLIUM_AXE          = "terillium_axe";
+    static final String TERILLIUM_HOE          = "terillium_hoe";
 }

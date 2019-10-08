@@ -1,6 +1,7 @@
 package forge.your.world.init;
 
 import forge.your.world.ForgeYourWorld;
+import forge.your.world.items.BasicAxe;
 import forge.your.world.items.BasicPickaxe;
 import forge.your.world.utils.materials.ArmorsMats;
 import forge.your.world.utils.materials.ToolsMats;
@@ -32,6 +33,14 @@ public class ItemsHandler {
 
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_PICKAXE)
     public static Item TERILLIUM_PICKAXE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_AXE)
+    public static Item TERILLIUM_AXE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_HOE)
+    public static Item TERILLIUM_HOE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_SHOVEL)
+    public static Item TERILLIUM_SHOVEL;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_SWORD)
+    public static Item TERILLIUM_SWORD;
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
@@ -45,7 +54,8 @@ public class ItemsHandler {
             e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.TERILLIUM_CHESTPLATE));
             e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.TERILLIUM_LEGGINGS));
             e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.TERILLIUM_BOOTS));
-            e.register(new BasicPickaxe(ToolsMats.TERILLIUM, 0.2f, properties).setRegistryName(RegisteryHolder.TERILLIUM_PICKAXE));
+            e.register(new BasicPickaxe(ToolsMats.TERILLIUM, -2.8f, properties).setRegistryName(RegisteryHolder.TERILLIUM_PICKAXE));
+            e.register(new BasicAxe(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_AXE));
         }
     }
 }
