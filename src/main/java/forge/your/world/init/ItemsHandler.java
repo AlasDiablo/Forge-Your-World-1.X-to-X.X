@@ -1,13 +1,13 @@
 package forge.your.world.init;
 
 import forge.your.world.ForgeYourWorld;
-import forge.your.world.items.BasicAxe;
-import forge.your.world.items.BasicPickaxe;
+import forge.your.world.items.*;
 import forge.your.world.utils.materials.ArmorsMats;
 import forge.your.world.utils.materials.ToolsMats;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -56,6 +56,9 @@ public class ItemsHandler {
             e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.TERILLIUM_BOOTS));
             e.register(new BasicPickaxe(ToolsMats.TERILLIUM, -2.8f, properties).setRegistryName(RegisteryHolder.TERILLIUM_PICKAXE));
             e.register(new BasicAxe(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_AXE));
+            e.register(new BasicHoe(ToolsMats.TERILLIUM, -0.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_HOE));
+            e.register(new BasicShovel(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SHOVEL));
+            e.register(new BasicSword(ToolsMats.TERILLIUM, -2.4f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SWORD));
         }
     }
 }
