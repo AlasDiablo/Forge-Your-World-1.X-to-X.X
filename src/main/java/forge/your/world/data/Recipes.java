@@ -90,6 +90,42 @@ public class Recipes extends RecipeProvider {
                 .patternLine(" S ")
                 .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
                 .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_AXE)
+                .key('T', ItemsTags.TERILLIUM)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("TT")
+                .patternLine("TS")
+                .patternLine(" S")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_HOE)
+                .key('T', ItemsTags.TERILLIUM)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("TT")
+                .patternLine(" S")
+                .patternLine(" S")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_SWORD)
+                .key('T', ItemsTags.TERILLIUM)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("T")
+                .patternLine("T")
+                .patternLine("S")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM_SHOVEL)
+                .key('T', ItemsTags.TERILLIUM)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("T")
+                .patternLine("S")
+                .patternLine("S")
+                .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
+                .build(consumer);
     }
 
     public void shapelessRecipe(Consumer<IFinishedRecipe> consumer) {

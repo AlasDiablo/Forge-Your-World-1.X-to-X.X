@@ -1,5 +1,5 @@
 ## 2.2.13d-alpha
-- add terillium pickaxe
+- add terillium tools
 
 ## 2.2.13c-alpha
 - add terillium armor
