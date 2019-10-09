@@ -1,10 +1,10 @@
 # Roadmap
 
-## 2.2.13 - Done
+## 2.2.13
 + port terillium
 + port terillium weapon & stuff
 
-## 2.2.14 - wip
+## 2.2.14
 + port red diamond
 + port red diamond weapon & stuff
 + port enderium
