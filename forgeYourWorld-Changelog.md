@@ -1,17 +1,21 @@
-## 2.2.13d-alpha
+## 2.2.14a
+- add red diamond ore
+- add red diamond block
+
+## 2.2.13d
 - add terillium tools
 
-## 2.2.13c-alpha
+## 2.2.13c
 - add terillium armor
 
-## 2.2.13b-alpha
+## 2.2.13b
 - add terillium armor material
 - port terillium
 - port raw terillium
 - add loot table
 - add tag
 
-## 2.2.13a-alpha
+## 2.2.13a
 - add core mod
 - port terillium ore (no drop)
 - port terillium block (no craft)
