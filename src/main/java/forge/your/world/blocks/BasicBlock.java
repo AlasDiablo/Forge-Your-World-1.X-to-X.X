@@ -5,9 +5,9 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class BasicOre extends Block {
+public class BasicBlock extends Block {
 
-    public BasicOre(String registryName, int harvestLevel) {
+    public BasicBlock(String registryName, int harvestLevel) {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
                 .hardnessAndResistance(3f)

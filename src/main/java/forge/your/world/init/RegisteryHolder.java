@@ -16,4 +16,7 @@ public class RegisteryHolder {
     static final String TERILLIUM_SWORD        = "terillium_sword";
     static final String TERILLIUM_AXE          = "terillium_axe";
     static final String TERILLIUM_HOE          = "terillium_hoe";
+    static final String RED_DIAMOND_ORE        = "red_diamond_ore";
+    static final String RED_DIAMOND            = "red_diamond";
+    static final String RED_DIAMOND_BLOCK      = "red_diamond_block";
 }
