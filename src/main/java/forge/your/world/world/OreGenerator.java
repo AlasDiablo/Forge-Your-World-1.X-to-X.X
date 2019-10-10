@@ -14,6 +14,7 @@ public class OreGenerator {
 
     public static void registerOreGen() {
         ForgeRegistries.BIOMES.forEach(biome -> {
+
             biome.addFeature(
                     GenerationStage.Decoration.UNDERGROUND_ORES,
                     Biome.createDecoratedFeature(
@@ -31,6 +32,25 @@ public class OreGenerator {
                             )
                     )
             );
+
+            biome.addFeature(
+                    GenerationStage.Decoration.UNDERGROUND_ORES,
+                    Biome.createDecoratedFeature(
+                            Feature.ORE,
+                            new OreFeatureConfig(
+                                    FillerBlockType.NETHERRACK,
+                                    BlocksHandler.RED_DIAMOND_ORE.getDefaultState(),
+                                    4),
+                            Placement.COUNT_RANGE,
+                            new CountRangeConfig(
+                                    32,
+                                    2,
+                                    0,
+                                    126
+                            )
+                    )
+            );
+
         });
     }
 }

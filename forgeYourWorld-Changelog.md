@@ -1,6 +1,7 @@
 ## 2.2.14a
 - add red diamond ore
 - add red diamond block
+- add red diamond
 
 ## 2.2.13d
 - add terillium tools

@@ -12,5 +12,8 @@
   "item.forgeyourworld.terillium_pickaxe": "Terillium Pickaxe",
   "item.forgeyourworld.terillium_shovel": "Terillium Shovel",
   "item.forgeyourworld.terillium_sword": "Terillium Sword",
-  "itemGroup.fyw.group": "Forge your world"
+  "itemGroup.fyw.group": "Forge your world",
+  "item.forgeryourworld.red_diamond": "Red Diamond",
+  "block.forgeyourworld.red_diamond_ore": "Red Diamond Ore",
+  "block.forgeyourworld.red_diamond_block": "Red Diamond Block"
 }

@@ -42,6 +42,9 @@ public class ItemsHandler {
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_SWORD)
     public static Item TERILLIUM_SWORD;
 
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND)
+    public static Item RED_DIAMOND;
+
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
         @SubscribeEvent
@@ -59,6 +62,7 @@ public class ItemsHandler {
             e.register(new BasicHoe(ToolsMats.TERILLIUM, -0.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_HOE));
             e.register(new BasicShovel(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SHOVEL));
             e.register(new BasicSword(ToolsMats.TERILLIUM, -2.4f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SWORD));
+            e.register(new Item(properties).setRegistryName(RegisteryHolder.RED_DIAMOND));
         }
     }
 }

@@ -5,7 +5,7 @@
 + port terillium weapon & stuff
 
 ## 2.2.14 - wip
-+ port red diamond
++ port red diamond - done
 + port red diamond weapon & stuff
 + port enderium
 + port enderium weapon & stuff

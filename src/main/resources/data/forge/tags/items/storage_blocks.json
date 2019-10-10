@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:storage_blocks/terillium"
+    "#forge:storage_blocks/terillium",
+    "#forge:storage_blocks/red_diamond"
   ]
 }

@@ -2,16 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:terillium_smelting"
+      "forgeyourworld:red_diamond_block"
     ]
   },
   "criteria": {
-    "has_terillium_ore": {
+    "has_red_diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:ore/terillium"
+            "tag": "forge:gems/red_diamond"
           }
         ]
       }
@@ -19,13 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:terillium_smelting"
+        "recipe": "forgeyourworld:red_diamond_block"
       }
     }
   },
   "requirements": [
     [
-      "has_terillium_ore",
+      "has_red_diamond",
       "has_the_recipe"
     ]
   ]

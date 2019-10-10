@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#forge:gems/terillium",
-    "#forge:gems/raw_terillium"
+    "#forge:gems/raw_terillium",
+    "#forge:gems/red_diamond"
   ]
 }

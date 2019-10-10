@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/red_diamond"
+    }
+  ],
+  "result": {
+    "item": "forgeyourworld:red_diamond",
+    "count": 9
+  }
+}
