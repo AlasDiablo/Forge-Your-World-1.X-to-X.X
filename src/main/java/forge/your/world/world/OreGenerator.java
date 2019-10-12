@@ -13,12 +13,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 /**
  * class use for handle world generation(only ore generation)
  */
-public class OreGenerator {
+public class OreGenerator implements IWorldGenerator {
 
     /**
      * function call for start ore generation
      */
-    public static void registerOreGen() {
+    public void startWorldGeneration() {
         ForgeRegistries.BIOMES.forEach(biome -> {
 
             biome.addFeature(
