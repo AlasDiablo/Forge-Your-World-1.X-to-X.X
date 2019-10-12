@@ -1,3 +1,6 @@
+## 2.2.14b
+- add red diamond armor
+
 ## 2.2.14a
 - add red diamond ore
 - add red diamond block

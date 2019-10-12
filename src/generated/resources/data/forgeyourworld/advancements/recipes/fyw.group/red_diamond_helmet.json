@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "forgeyourworld:red_diamond_helmet"
+    ]
+  },
+  "criteria": {
+    "has_red_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:gems/red_diamond"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "forgeyourworld:red_diamond_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_red_diamond",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,11 +1,14 @@
 package forge.your.world.utils.materials;
 
+import forge.your.world.init.ItemsHandler;
 import forge.your.world.init.RegisteryHolder;
+import forge.your.world.utils.tags.ItemsTags;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.Tag;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 
@@ -16,7 +19,11 @@ public enum ArmorsMats implements IArmorMaterial {
     /**
      * terillium material
      */
-    TERILLIUM("terillium", 25, new int[] {3, 6, 8, 3}, 25, Items.BEDROCK, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5f);
+    TERILLIUM("terillium", 25, new int[] {3, 6, 8, 3}, 25, ItemsTags.TERILLIUM, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5f),
+    /**
+     * red diamond material
+     */
+    RED_DIAMOND("red_diamond", 75, new int[] {3, 6, 8, 3}, 75, ItemsTags.RED_DIAMOND, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0f);
 
     /**
      * name of the material
@@ -63,7 +70,7 @@ public enum ArmorsMats implements IArmorMaterial {
      * @param soundEvent sound(sound use on equipe) of the material
      * @param toughness toughness of the material
      */
-    ArmorsMats(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairItem, SoundEvent soundEvent, float toughness) {
+    ArmorsMats(String name, int durability, int[] damageReductionAmount, int enchantability, Tag<Item> repairItem, SoundEvent soundEvent, float toughness) {
         final int[] max_damge_arry = new int[] {13, 15, 16, 11};
         this.damageReductionAmount = damageReductionAmount;
         this.toughness = toughness;
@@ -73,7 +80,7 @@ public enum ArmorsMats implements IArmorMaterial {
         for (int i = 0; i < 4; i++) {
             this.durability[i] = max_damge_arry[i] * durability;
         }
-        this.repairMaterial = Ingredient.fromItems(repairItem);
+        this.repairMaterial = Ingredient.fromTag(repairItem);
         this.name = RegisteryHolder.MOD_ID + ":" + name;
     }
 

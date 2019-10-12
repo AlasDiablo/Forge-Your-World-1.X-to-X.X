@@ -15,5 +15,9 @@
   "itemGroup.fyw.group": "Forge your world",
   "item.forgeryourworld.red_diamond": "Red Diamond",
   "block.forgeyourworld.red_diamond_ore": "Red Diamond Ore",
-  "block.forgeyourworld.red_diamond_block": "Red Diamond Block"
+  "block.forgeyourworld.red_diamond_block": "Red Diamond Block",
+  "item.forgeyourworld.red_diamond_helmet": "Red Diamond helmet",
+  "item.forgeyourworld.red_diamond_chestplate": "Red Diamond chestplate",
+  "item.forgeyourworld.red_diamond_leggings": "Red Diamond leggings",
+  "item.forgeyourworld.red_diamond_boots": "Red Diamond boots"
 }

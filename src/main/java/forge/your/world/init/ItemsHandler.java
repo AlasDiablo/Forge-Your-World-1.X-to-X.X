@@ -52,6 +52,15 @@ public class ItemsHandler {
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND)
     public static Item RED_DIAMOND;
 
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_HELMET)
+    public static Item RED_DIAMOND_HELMET;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_CHESTPLATE)
+    public static Item RED_DIAMOND_CHESTPLATE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_LEGGINGS)
+    public static Item RED_DIAMOND_LEGGINGS;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_BOOTS)
+    public static Item RED_DIAMOND_BOOTS;
+
     /**
      * event use for make an instance
      */
@@ -78,6 +87,10 @@ public class ItemsHandler {
             e.register(new BasicShovel(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SHOVEL));
             e.register(new BasicSword(ToolsMats.TERILLIUM, -2.4f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SWORD));
             e.register(new Item(properties).setRegistryName(RegisteryHolder.RED_DIAMOND));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_HELMET));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_CHESTPLATE));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_LEGGINGS));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_BOOTS));
         }
     }
 }

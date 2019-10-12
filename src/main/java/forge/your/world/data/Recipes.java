@@ -137,6 +137,36 @@ public class Recipes extends RecipeProvider {
                 .patternLine("RRR")
                 .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
                 .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_HELMET)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("RRR")
+                .patternLine("R R")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_CHESTPLATE)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("R R")
+                .patternLine("RRR")
+                .patternLine("RRR")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_LEGGINGS)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("RRR")
+                .patternLine("R R")
+                .patternLine("R R")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_BOOTS)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("R R")
+                .patternLine("R R")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
     }
 
     /**
