@@ -2,7 +2,6 @@ package forge.your.world.data;
 
 import forge.your.world.init.BlocksHandler;
 import forge.your.world.init.ItemsHandler;
-import forge.your.world.utils.tags.BlocksTags;
 import forge.your.world.utils.tags.ItemsTags;
 import net.minecraft.data.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -34,6 +33,9 @@ public class Recipes extends RecipeProvider {
         this.shapelessRecipe(consumer);
     }
 
+    /**
+     * crafting table (shaped recipe)
+     */
     private void shapedRecipe(Consumer<IFinishedRecipe> consumer) {
         ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM)
                 .key('T', ItemsTags.RAW_TERILLIUM)
@@ -137,6 +139,9 @@ public class Recipes extends RecipeProvider {
                 .build(consumer);
     }
 
+    /**
+     * crafting table (shapeless recipe)
+     */
     public void shapelessRecipe(Consumer<IFinishedRecipe> consumer) {
         ShapelessRecipeBuilder.shapelessRecipe(ItemsHandler.TERILLIUM, 9)
                 .addIngredient(ItemsTags.TERILLIUM_BLOCK)
@@ -149,6 +154,9 @@ public class Recipes extends RecipeProvider {
                 .build(consumer, "red_diamond_from_block");
     }
 
+    /**
+     * furnace recipe
+     */
     private void oreSmelting(Consumer<IFinishedRecipe> consumer) {
         CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlocksHandler.TERILLIUM_ORE), ItemsHandler.TERILLIUM, 0.1f, 200)
                 .addCriterion("has_terillium_ore", this.hasItem(ItemsTags.TERILLIUM_ORE)).build(consumer, "terillium_smelting");
@@ -157,6 +165,9 @@ public class Recipes extends RecipeProvider {
                 .addCriterion("has_red_diamond_ore", this.hasItem(ItemsTags.RED_DIAMOND_ORE)).build(consumer, "red_diamond_smelting");
     }
 
+    /**
+     * blast furnace recipe
+     */
     private void oreBlasting(Consumer<IFinishedRecipe> consumer) {
         CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlocksHandler.TERILLIUM_ORE), ItemsHandler.TERILLIUM, 0.1f, 100)
                 .addCriterion("has_terillium_ore", this.hasItem(ItemsTags.TERILLIUM_ORE)).build(consumer, "terillium_blasting");

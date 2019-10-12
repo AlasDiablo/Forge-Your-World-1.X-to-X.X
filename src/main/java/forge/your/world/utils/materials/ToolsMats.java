@@ -5,8 +5,16 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
+/**
+ * enum use for store all tools material
+ */
 public enum ToolsMats implements IItemTier {
-    TERILLIUM(768, 8.0f, 4.0f, 3, 25, ItemsHandler.TERILLIUM);
+    /**
+     * terillium tools material
+     */
+    TERILLIUM(768, 8.0f, 8.0f, 3, 25, ItemsHandler.TERILLIUM);
+
+    // todo finish the javadoc
 
     private int maxUses, harvestLevel, enchantability;
     private float efficiency, attackDamage;

@@ -14,8 +14,15 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 
+/**
+ * class use for handle all block
+ */
 @SuppressWarnings("unused")
 public class ItemsHandler {
+
+    /**
+     * Items declaration
+     */
 
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_RAW)
     public static Item RAW_TERILLIUM;
@@ -45,8 +52,16 @@ public class ItemsHandler {
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND)
     public static Item RED_DIAMOND;
 
+    /**
+     * event use for make an instance
+     */
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
+
+        /**
+         * items register
+         * @param event registry event from forge
+         */
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             Item.Properties properties = new Item.Properties().group(ForgeYourWorld.fywGroup);

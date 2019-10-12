@@ -1,5 +1,8 @@
 package forge.your.world.init;
 
+/**
+ * class use for handle and store all registry name
+ */
 public class RegisteryHolder {
 
     public static final String MOD_ID          = "forgeyourworld";

@@ -10,8 +10,14 @@ import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
 
+/**
+ * class use for handle world generation(only ore generation)
+ */
 public class OreGenerator {
 
+    /**
+     * function call for start ore generation
+     */
     public static void registerOreGen() {
         ForgeRegistries.BIOMES.forEach(biome -> {
 
