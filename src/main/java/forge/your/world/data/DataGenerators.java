@@ -18,6 +18,9 @@ public class DataGenerators {
     @SubscribeEvent
     public static void gatherDate(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
-        generator.addProvider(new Recipes(generator));
+        generator.addProvider(new BlastingRecipes(generator));
+        generator.addProvider(new ShapedRecipes(generator));
+        generator.addProvider(new ShapelessRecipes(generator));
+        generator.addProvider(new SmeltingRecipes(generator));
     }
 }

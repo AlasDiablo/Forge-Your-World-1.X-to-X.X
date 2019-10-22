@@ -26,4 +26,9 @@ public class RegisteryHolder {
     static final String RED_DIAMOND_CHESTPLATE = "red_diamond_chestplate";
     static final String RED_DIAMOND_LEGGINGS   = "red_diamond_leggings";
     static final String RED_DIAMOND_BOOTS      = "red_diamond_boots";
+    static final String RED_DIAMOND_PICKAXE    = "red_diamond_pickaxe";
+    static final String RED_DIAMOND_SHOVEL     = "red_diamond_shovel";
+    static final String RED_DIAMOND_SWORD      = "red_diamond_sword";
+    static final String RED_DIAMOND_AXE        = "red_diamond_axe";
+    static final String RED_DIAMOND_HOE        = "red_diamond_hoe";
 }

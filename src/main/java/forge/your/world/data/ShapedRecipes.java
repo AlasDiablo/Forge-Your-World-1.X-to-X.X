@@ -3,40 +3,112 @@ package forge.your.world.data;
 import forge.your.world.init.BlocksHandler;
 import forge.your.world.init.ItemsHandler;
 import forge.your.world.utils.tags.ItemsTags;
-import net.minecraft.data.*;
-import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.IFinishedRecipe;
+import net.minecraft.data.RecipeProvider;
+import net.minecraft.data.ShapedRecipeBuilder;
 import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
 
-/**
- * forge your world recipes data generator
- */
-public class Recipes extends RecipeProvider {
+public class ShapedRecipes extends RecipeProvider {
 
-    /**
-     * constructor
-     * @param generatorIn data generator instance
-     */
-    public Recipes(DataGenerator generatorIn) {
+    public ShapedRecipes(DataGenerator generatorIn) {
         super(generatorIn);
     }
 
-    /**
-     * load all recipes
-     */
     @Override
     protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
-        this.oreSmelting(consumer);
-        this.oreBlasting(consumer);
-        this.shapedRecipe(consumer);
-        this.shapelessRecipe(consumer);
+        this.registerTerilliumRecipes(consumer);
+        this.registerRedDiamondRecipes(consumer);
     }
 
-    /**
-     * crafting table (shaped recipe)
-     */
-    private void shapedRecipe(Consumer<IFinishedRecipe> consumer) {
+    private void registerRedDiamondRecipes(Consumer<IFinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shapedRecipe(BlocksHandler.RED_DIAMOND_BLOCK)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("RRR")
+                .patternLine("RRR")
+                .patternLine("RRR")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_HELMET)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("RRR")
+                .patternLine("R R")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_CHESTPLATE)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("R R")
+                .patternLine("RRR")
+                .patternLine("RRR")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_LEGGINGS)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("RRR")
+                .patternLine("R R")
+                .patternLine("R R")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_BOOTS)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .patternLine("R R")
+                .patternLine("R R")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_PICKAXE)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("RRR")
+                .patternLine(" S ")
+                .patternLine(" S ")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_AXE)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("RR")
+                .patternLine("RS")
+                .patternLine(" S")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_HOE)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("RR")
+                .patternLine(" S")
+                .patternLine(" S")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_SWORD)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("R")
+                .patternLine("R")
+                .patternLine("S")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_SHOVEL)
+                .key('R', ItemsTags.RED_DIAMOND)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("R")
+                .patternLine("S")
+                .patternLine("S")
+                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
+                .build(consumer);
+    }
+
+    private void registerTerilliumRecipes(Consumer<IFinishedRecipe> consumer) {
         ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TERILLIUM)
                 .key('T', ItemsTags.RAW_TERILLIUM)
                 .key('G', Tags.Items.DUSTS_GLOWSTONE)
@@ -129,81 +201,5 @@ public class Recipes extends RecipeProvider {
                 .patternLine("S")
                 .addCriterion("has_terillium", this.hasItem(ItemsTags.TERILLIUM))
                 .build(consumer);
-
-        ShapedRecipeBuilder.shapedRecipe(BlocksHandler.RED_DIAMOND_BLOCK)
-                .key('R', ItemsTags.RED_DIAMOND)
-                .patternLine("RRR")
-                .patternLine("RRR")
-                .patternLine("RRR")
-                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
-                .build(consumer);
-
-        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_HELMET)
-                .key('R', ItemsTags.RED_DIAMOND)
-                .patternLine("RRR")
-                .patternLine("R R")
-                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
-                .build(consumer);
-
-        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_CHESTPLATE)
-                .key('R', ItemsTags.RED_DIAMOND)
-                .patternLine("R R")
-                .patternLine("RRR")
-                .patternLine("RRR")
-                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
-                .build(consumer);
-
-        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_LEGGINGS)
-                .key('R', ItemsTags.RED_DIAMOND)
-                .patternLine("RRR")
-                .patternLine("R R")
-                .patternLine("R R")
-                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
-                .build(consumer);
-
-        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.RED_DIAMOND_BOOTS)
-                .key('R', ItemsTags.RED_DIAMOND)
-                .patternLine("R R")
-                .patternLine("R R")
-                .addCriterion("has_red_diamond", this.hasItem(ItemsTags.RED_DIAMOND))
-                .build(consumer);
     }
-
-    /**
-     * crafting table (shapeless recipe)
-     */
-    public void shapelessRecipe(Consumer<IFinishedRecipe> consumer) {
-        ShapelessRecipeBuilder.shapelessRecipe(ItemsHandler.TERILLIUM, 9)
-                .addIngredient(ItemsTags.TERILLIUM_BLOCK)
-                .addCriterion("has_terillium_block", this.hasItem(ItemsTags.TERILLIUM_BLOCK))
-                .build(consumer, "terillium_from_block");
-
-        ShapelessRecipeBuilder.shapelessRecipe(ItemsHandler.RED_DIAMOND, 9)
-                .addIngredient(ItemsTags.RED_DIAMOND_BLOCK)
-                .addCriterion("has_red_diamond_block", this.hasItem(ItemsTags.RED_DIAMOND_BLOCK))
-                .build(consumer, "red_diamond_from_block");
-    }
-
-    /**
-     * furnace recipe
-     */
-    private void oreSmelting(Consumer<IFinishedRecipe> consumer) {
-        CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlocksHandler.TERILLIUM_ORE), ItemsHandler.TERILLIUM, 0.1f, 200)
-                .addCriterion("has_terillium_ore", this.hasItem(ItemsTags.TERILLIUM_ORE)).build(consumer, "terillium_smelting");
-
-        CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlocksHandler.RED_DIAMOND_ORE), ItemsHandler.RED_DIAMOND, 0.1f, 200)
-                .addCriterion("has_red_diamond_ore", this.hasItem(ItemsTags.RED_DIAMOND_ORE)).build(consumer, "red_diamond_smelting");
-    }
-
-    /**
-     * blast furnace recipe
-     */
-    private void oreBlasting(Consumer<IFinishedRecipe> consumer) {
-        CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlocksHandler.TERILLIUM_ORE), ItemsHandler.TERILLIUM, 0.1f, 100)
-                .addCriterion("has_terillium_ore", this.hasItem(ItemsTags.TERILLIUM_ORE)).build(consumer, "terillium_blasting");
-
-        CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlocksHandler.RED_DIAMOND_ORE), ItemsHandler.RED_DIAMOND, 0.1f, 100)
-                .addCriterion("has_red_diamond_ore", this.hasItem(ItemsTags.RED_DIAMOND_ORE)).build(consumer, "red_diamond_blasting");
-    }
-
 }

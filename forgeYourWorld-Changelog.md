@@ -1,3 +1,6 @@
+## 2.2.14c
+- add red diamond tools
+
 ## 2.2.14b
 - add red diamond armor
 
@@ -14,15 +17,15 @@
 
 ## 2.2.13b
 - add terillium armor material
-- port terillium
-- port raw terillium
+- add terillium
+- add raw terillium
 - add loot table
 - add tag
 
 ## 2.2.13a
 - add core mod
-- port terillium ore (no drop)
-- port terillium block (no craft)
+- add terillium ore (no drop)
+- add terillium block (no craft)
 
 ## 1.2.12
 - add barrel

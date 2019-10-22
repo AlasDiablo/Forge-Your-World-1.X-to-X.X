@@ -13,11 +13,16 @@
   "item.forgeyourworld.terillium_shovel": "Terillium Shovel",
   "item.forgeyourworld.terillium_sword": "Terillium Sword",
   "itemGroup.fyw.group": "Forge your world",
-  "item.forgeryourworld.red_diamond": "Red Diamond",
+  "item.forgeyourworld.red_diamond": "Red Diamond",
   "block.forgeyourworld.red_diamond_ore": "Red Diamond Ore",
   "block.forgeyourworld.red_diamond_block": "Red Diamond Block",
   "item.forgeyourworld.red_diamond_helmet": "Red Diamond helmet",
   "item.forgeyourworld.red_diamond_chestplate": "Red Diamond chestplate",
   "item.forgeyourworld.red_diamond_leggings": "Red Diamond leggings",
-  "item.forgeyourworld.red_diamond_boots": "Red Diamond boots"
+  "item.forgeyourworld.red_diamond_boots": "Red Diamond boots",
+  "item.forgeyourworld.red_diamond_axe": "Red Diamond Axe",
+  "item.forgeyourworld.red_diamond_hoe": "Red Diamond Hoe",
+  "item.forgeyourworld.red_diamond_pickaxe": "Red Diamond Pickaxe",
+  "item.forgeyourworld.red_diamond_shovel": "Red Diamond Shovel",
+  "item.forgeyourworld.red_diamond_sword": "Red Diamond Sword"
 }

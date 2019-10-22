@@ -61,6 +61,17 @@ public class ItemsHandler {
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_BOOTS)
     public static Item RED_DIAMOND_BOOTS;
 
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_PICKAXE)
+    public static Item RED_DIAMOND_PICKAXE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_AXE)
+    public static Item RED_DIAMOND_AXE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_HOE)
+    public static Item RED_DIAMOND_HOE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_SHOVEL)
+    public static Item RED_DIAMOND_SHOVEL;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_SWORD)
+    public static Item RED_DIAMOND_SWORD;
+
     /**
      * event use for make an instance
      */
@@ -91,6 +102,11 @@ public class ItemsHandler {
             e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_CHESTPLATE));
             e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_LEGGINGS));
             e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_BOOTS));
+            e.register(new BasicPickaxe(ToolsMats.RED_DIAMOND, -2.8f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_PICKAXE));
+            e.register(new BasicAxe(ToolsMats.RED_DIAMOND, -3.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_AXE));
+            e.register(new BasicHoe(ToolsMats.RED_DIAMOND, -0.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_HOE));
+            e.register(new BasicShovel(ToolsMats.RED_DIAMOND, -3.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SHOVEL));
+            e.register(new BasicSword(ToolsMats.RED_DIAMOND, -2.4f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SWORD));
         }
     }
 }

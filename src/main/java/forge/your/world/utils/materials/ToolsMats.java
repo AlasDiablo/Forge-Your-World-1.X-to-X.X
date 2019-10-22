@@ -12,7 +12,8 @@ public enum ToolsMats implements IItemTier {
     /**
      * terillium tools material
      */
-    TERILLIUM(768, 8.0f, 8.0f, 3, 25, ItemsHandler.TERILLIUM);
+    TERILLIUM(768, 8.0f, 8.0f, 3, 25, ItemsHandler.TERILLIUM),
+    RED_DIAMOND(1536, 16.0f, 10.0f, 3, 50, ItemsHandler.RED_DIAMOND);
 
     // todo finish the javadoc
 
