@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "forgeyourworld:enderium_ore"
+  },
+  "result": "forgeyourworld:enderium_ingot",
+  "experience": 0.1,
+  "cookingtime": 200
+}

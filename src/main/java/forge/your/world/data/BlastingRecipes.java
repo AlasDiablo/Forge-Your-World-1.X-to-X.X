@@ -11,6 +11,9 @@ import net.minecraft.item.crafting.Ingredient;
 
 import java.util.function.Consumer;
 
+/**
+ * Class use to handle all blasting recipes
+ */
 public class BlastingRecipes extends RecipeProvider {
 
     public BlastingRecipes(DataGenerator generatorIn) {
@@ -24,5 +27,8 @@ public class BlastingRecipes extends RecipeProvider {
 
         CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlocksHandler.RED_DIAMOND_ORE), ItemsHandler.RED_DIAMOND, 0.1f, 100)
                 .addCriterion("has_red_diamond_ore", this.hasItem(ItemsTags.RED_DIAMOND_ORE)).build(consumer, "red_diamond_blasting");
+
+        CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlocksHandler.ENDERIUM_ORE), ItemsHandler.ENDERIUM_INGOT, 0.1f, 100)
+                .addCriterion("has_enderium_ore", this.hasItem(ItemsTags.ENDERIUM_ORE)).build(consumer, "enderium_blasting");
     }
 }

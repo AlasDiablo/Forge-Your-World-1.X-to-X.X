@@ -31,4 +31,7 @@ public class RegisteryHolder {
     static final String RED_DIAMOND_SWORD      = "red_diamond_sword";
     static final String RED_DIAMOND_AXE        = "red_diamond_axe";
     static final String RED_DIAMOND_HOE        = "red_diamond_hoe";
+    static final String ENDERIUM_ORE           = "enderium_ore";
+    static final String ENDERIUM_INGOT         = "enderium_ingot";
+    static final String ENDERIUM_BLOCK         = "enderium_block";
 }

@@ -9,6 +9,9 @@ import net.minecraft.data.ShapelessRecipeBuilder;
 
 import java.util.function.Consumer;
 
+/**
+ * Class use to handle all shapeless recipes
+ */
 public class ShapelessRecipes extends RecipeProvider {
 
     public ShapelessRecipes(DataGenerator generatorIn) {
@@ -26,5 +29,10 @@ public class ShapelessRecipes extends RecipeProvider {
                 .addIngredient(ItemsTags.RED_DIAMOND_BLOCK)
                 .addCriterion("has_red_diamond_block", this.hasItem(ItemsTags.RED_DIAMOND_BLOCK))
                 .build(consumer, "red_diamond_from_block");
+
+        ShapelessRecipeBuilder.shapelessRecipe(ItemsHandler.ENDERIUM_INGOT, 9)
+                .addIngredient(ItemsTags.ENDERIUM_BLOCK)
+                .addCriterion("has_enderium_block", this.hasItem(ItemsTags.ENDERIUM_BLOCK))
+                .build(consumer, "enderium_from_block");
     }
 }

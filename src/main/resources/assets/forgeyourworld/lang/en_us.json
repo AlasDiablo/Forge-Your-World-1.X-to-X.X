@@ -24,5 +24,8 @@
   "item.forgeyourworld.red_diamond_hoe": "Red Diamond Hoe",
   "item.forgeyourworld.red_diamond_pickaxe": "Red Diamond Pickaxe",
   "item.forgeyourworld.red_diamond_shovel": "Red Diamond Shovel",
-  "item.forgeyourworld.red_diamond_sword": "Red Diamond Sword"
+  "item.forgeyourworld.red_diamond_sword": "Red Diamond Sword",
+  "item.forgeyourworld.enderium_ingot": "Enderium Ingot",
+  "block.forgeyourworld.enderium_ore": "Enderium Ore",
+  "block.forgeyourworld.enderium_block": "Enderium Block"
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:enderium_blasting"
+    ]
+  },
+  "criteria": {
+    "has_enderium_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ore/enderium"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:enderium_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_enderium_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

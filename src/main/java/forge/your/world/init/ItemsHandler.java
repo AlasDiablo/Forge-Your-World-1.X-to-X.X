@@ -7,7 +7,6 @@ import forge.your.world.utils.materials.ToolsMats;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -72,6 +71,9 @@ public class ItemsHandler {
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_SWORD)
     public static Item RED_DIAMOND_SWORD;
 
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_INGOT)
+    public static Item ENDERIUM_INGOT;
+
     /**
      * event use for make an instance
      */
@@ -107,6 +109,7 @@ public class ItemsHandler {
             e.register(new BasicHoe(ToolsMats.RED_DIAMOND, -0.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_HOE));
             e.register(new BasicShovel(ToolsMats.RED_DIAMOND, -3.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SHOVEL));
             e.register(new BasicSword(ToolsMats.RED_DIAMOND, -2.4f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SWORD));
+            e.register(new Item(properties).setRegistryName(RegisteryHolder.ENDERIUM_INGOT));
         }
     }
 }

@@ -11,6 +11,9 @@ import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
 
+/**
+ * Class use to handle all shaped recipes
+ */
 public class ShapedRecipes extends RecipeProvider {
 
     public ShapedRecipes(DataGenerator generatorIn) {
@@ -21,6 +24,17 @@ public class ShapedRecipes extends RecipeProvider {
     protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
         this.registerTerilliumRecipes(consumer);
         this.registerRedDiamondRecipes(consumer);
+        this.registerEnderiumRecipes(consumer);
+    }
+
+    private void registerEnderiumRecipes(Consumer<IFinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shapedRecipe(BlocksHandler.ENDERIUM_BLOCK)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .patternLine("EEE")
+                .patternLine("EEE")
+                .patternLine("EEE")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
     }
 
     private void registerRedDiamondRecipes(Consumer<IFinishedRecipe> consumer) {

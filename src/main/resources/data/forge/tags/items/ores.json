@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#forge:ores/terillium",
-    "#forge:ores/red_diamond"
+    "#forge:ores/red_diamond",
+    "#forge:ores/enderium"
   ]
 }

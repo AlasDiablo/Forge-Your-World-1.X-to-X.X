@@ -26,10 +26,16 @@ public class BlocksHandler {
     public static Block TERILLIUM_ORE;
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TERILLIUM_BLOCK)
     public static Block TERILLIUM_BLOCK;
+
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_ORE)
     public static Block RED_DIAMOND_ORE;
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_BLOCK)
     public static Block RED_DIAMOND_BLOCK;
+
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_ORE)
+    public static Block ENDERIUM_ORE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_BLOCK)
+    public static Block ENDERIUM_BLOCK;
 
     /**
      * event use for make an instance
@@ -48,6 +54,8 @@ public class BlocksHandler {
             e.register(new BasicBlock(RegisteryHolder.TERILLIUM_BLOCK, ToolType.PICKAXE, 1));
             e.register(new BasicBlock(RegisteryHolder.RED_DIAMOND_ORE, ToolType.PICKAXE, 3));
             e.register(new BasicBlock(RegisteryHolder.RED_DIAMOND_BLOCK, ToolType.PICKAXE, 2));
+            e.register(new BasicBlock(RegisteryHolder.ENDERIUM_ORE, ToolType.PICKAXE, 3));
+            e.register(new BasicBlock(RegisteryHolder.ENDERIUM_BLOCK, ToolType.PICKAXE, 3));
         }
 
         /**
@@ -62,6 +70,8 @@ public class BlocksHandler {
             e.register(new BlockItem(TERILLIUM_BLOCK, properties).setRegistryName(RegisteryHolder.TERILLIUM_BLOCK));
             e.register(new BlockItem(RED_DIAMOND_ORE, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_ORE));
             e.register(new BlockItem(RED_DIAMOND_BLOCK, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_BLOCK));
+            e.register(new BlockItem(ENDERIUM_ORE, properties).setRegistryName(RegisteryHolder.ENDERIUM_ORE));
+            e.register(new BlockItem(ENDERIUM_BLOCK, properties).setRegistryName(RegisteryHolder.ENDERIUM_BLOCK));
         }
     }
 }

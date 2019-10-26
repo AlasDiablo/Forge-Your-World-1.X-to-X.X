@@ -1,10 +1,10 @@
 package forge.your.world.world;
 
 import forge.your.world.init.BlocksHandler;
+import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.OreFeatureConfig.FillerBlockType;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
@@ -53,6 +53,24 @@ public class OreGenerator implements IWorldGenerator {
                                     2,
                                     0,
                                     126
+                            )
+                    )
+            );
+
+            biome.addFeature(
+                    GenerationStage.Decoration.UNDERGROUND_ORES,
+                    Biome.createDecoratedFeature(
+                            Feature.EMERALD_ORE,
+                            new ReplaceBlockConfig(
+                                    Blocks.END_STONE.getDefaultState(),
+                                    BlocksHandler.ENDERIUM_ORE.getDefaultState()
+                            ),
+                            Placement.COUNT_RANGE,
+                            new CountRangeConfig(
+                                    42,
+                                    16,
+                                    0,
+                                    64
                             )
                     )
             );

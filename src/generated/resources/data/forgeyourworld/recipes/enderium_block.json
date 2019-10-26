@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:ingots/enderium"
+    }
+  },
+  "result": {
+    "item": "forgeyourworld:enderium_block"
+  }
+}
