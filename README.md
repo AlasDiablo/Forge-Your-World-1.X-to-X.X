@@ -17,7 +17,7 @@ Yes you can, as long as you credit Forge Your World in the description of your m
 
 # Download:
 
-- [Curseforge](https://www.curseforge.com/minecraft/mc-mods/janoeo)
+- [Curseforge](https://www.curseforge.com/minecraft/mc-mods/forge-your-world/)
 - [Planet Minecraft](https://www.planetminecraft.com/mod/1-11-2-forge-your-world/)
 
 # Some screenshots:
