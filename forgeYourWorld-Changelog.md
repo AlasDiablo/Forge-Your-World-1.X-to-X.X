@@ -1,3 +1,12 @@
+## 2.2.14e
+- add enderium tools
+- add enderium armor
+
+## 2.2.14d
+- add enderium ore
+- add enderium block
+- add enderium ingot
+
 ## 2.2.14c
 - add red diamond tools
 

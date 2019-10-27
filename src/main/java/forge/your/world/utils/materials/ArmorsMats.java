@@ -23,7 +23,8 @@ public enum ArmorsMats implements IArmorMaterial {
     /**
      * red diamond material
      */
-    RED_DIAMOND("red_diamond", 75, new int[] {3, 6, 8, 3}, 75, ItemsTags.RED_DIAMOND, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0f);
+    RED_DIAMOND("red_diamond", 50, new int[] {3, 6, 8, 3}, 50, ItemsTags.RED_DIAMOND, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.75f),
+    ENDERIUM("enderium", 75, new int[] {3, 6, 8, 3} ,75, ItemsTags.ENDERIUM_INGOT, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0f);
 
     /**
      * name of the material

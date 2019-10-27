@@ -35,6 +35,81 @@ public class ShapedRecipes extends RecipeProvider {
                 .patternLine("EEE")
                 .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
                 .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_HELMET)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .patternLine("EEE")
+                .patternLine("E E")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_CHESTPLATE)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .patternLine("E E")
+                .patternLine("EEE")
+                .patternLine("EEE")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_LEGGINGS)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .patternLine("EEE")
+                .patternLine("E E")
+                .patternLine("E E")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_BOOTS)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .patternLine("E E")
+                .patternLine("E E")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_PICKAXE)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("EEE")
+                .patternLine(" S ")
+                .patternLine(" S ")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_AXE)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("EE")
+                .patternLine("ES")
+                .patternLine(" S")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_HOE)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("EE")
+                .patternLine(" S")
+                .patternLine(" S")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_SWORD)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("E")
+                .patternLine("E")
+                .patternLine("S")
+                .addCriterion("has_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.ENDERIUM_SHOVEL)
+                .key('E', ItemsTags.ENDERIUM_INGOT)
+                .key('S', Tags.Items.RODS_WOODEN)
+                .patternLine("E")
+                .patternLine("S")
+                .patternLine("S")
+                .addCriterion("has_red_enderium", this.hasItem(ItemsTags.ENDERIUM_INGOT))
+                .build(consumer);
     }
 
     private void registerRedDiamondRecipes(Consumer<IFinishedRecipe> consumer) {

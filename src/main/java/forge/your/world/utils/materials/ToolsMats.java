@@ -1,9 +1,10 @@
 package forge.your.world.utils.materials;
 
-import forge.your.world.init.ItemsHandler;
+import forge.your.world.utils.tags.ItemsTags;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.tags.Tag;
 
 /**
  * enum use for store all tools material
@@ -12,11 +13,12 @@ public enum ToolsMats implements IItemTier {
     /**
      * terillium tools material
      */
-    TERILLIUM(768, 8.0f, 8.0f, 3, 25, ItemsHandler.TERILLIUM),
+    TERILLIUM(768, 8.0f, 8.0f, 3, 25, ItemsTags.TERILLIUM),
     /**
      * red diamond material
      */
-    RED_DIAMOND(1536, 16.0f, 10.0f, 3, 50, ItemsHandler.RED_DIAMOND);
+    RED_DIAMOND(1536, 16.0f, 10.0f, 3, 50, ItemsTags.RED_DIAMOND),
+    ENDERIUM(2304, 24.0f, 12.0f, 3, 75, ItemsTags.ENDERIUM_INGOT);
 
     /**
      * max use of the material
@@ -57,13 +59,13 @@ public enum ToolsMats implements IItemTier {
      * @param enchantability @see the private variable
      * @param repairItem @see the private variable
      */
-    ToolsMats(int maxUses, float efficiency, float attackDamage, int harvestLevel, int enchantability, Item repairItem) {
+    ToolsMats(int maxUses, float efficiency, float attackDamage, int harvestLevel, int enchantability, Tag<Item> repairItem) {
         this.maxUses = maxUses;
         this.harvestLevel = harvestLevel;
         this.enchantability = enchantability;
         this.efficiency = efficiency;
         this.attackDamage = attackDamage;
-        this.repairMaterial = Ingredient.fromItems(repairItem);
+        this.repairMaterial = Ingredient.fromTag(repairItem);
     }
 
     @Override

@@ -60,6 +60,8 @@ public class ItemsHandler {
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_BOOTS)
     public static Item RED_DIAMOND_BOOTS;
 
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_SWORD)
+    public static Item RED_DIAMOND_SWORD;
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_PICKAXE)
     public static Item RED_DIAMOND_PICKAXE;
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_AXE)
@@ -68,11 +70,29 @@ public class ItemsHandler {
     public static Item RED_DIAMOND_HOE;
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_SHOVEL)
     public static Item RED_DIAMOND_SHOVEL;
-    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.RED_DIAMOND_SWORD)
-    public static Item RED_DIAMOND_SWORD;
 
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_INGOT)
     public static Item ENDERIUM_INGOT;
+
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_HELMET)
+    public static Item ENDERIUM_HELMET;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_CHESTPLATE)
+    public static Item ENDERIUM_CHESTPLATE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_LEGGINGS)
+    public static Item ENDERIUM_LEGGINGS;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_BOOTS)
+    public static Item ENDERIUM_BOOTS;
+
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_SWORD)
+    public static Item ENDERIUM_SWORD;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_PICKAXE)
+    public static Item ENDERIUM_PICKAXE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_AXE)
+    public static Item ENDERIUM_AXE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_HOE)
+    public static Item ENDERIUM_HOE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_SHOVEL)
+    public static Item ENDERIUM_SHOVEL;
 
     /**
      * event use for make an instance
@@ -110,6 +130,15 @@ public class ItemsHandler {
             e.register(new BasicShovel(ToolsMats.RED_DIAMOND, -3.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SHOVEL));
             e.register(new BasicSword(ToolsMats.RED_DIAMOND, -2.4f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SWORD));
             e.register(new Item(properties).setRegistryName(RegisteryHolder.ENDERIUM_INGOT));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.ENDERIUM_HELMET));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.ENDERIUM_CHESTPLATE));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.ENDERIUM_LEGGINGS));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.ENDERIUM_BOOTS));
+            e.register(new BasicPickaxe(ToolsMats.ENDERIUM, -2.8f, properties).setRegistryName(RegisteryHolder.ENDERIUM_PICKAXE));
+            e.register(new BasicAxe(ToolsMats.ENDERIUM, -3.0f, properties).setRegistryName(RegisteryHolder.ENDERIUM_AXE));
+            e.register(new BasicHoe(ToolsMats.ENDERIUM, -0.0f, properties).setRegistryName(RegisteryHolder.ENDERIUM_HOE));
+            e.register(new BasicShovel(ToolsMats.ENDERIUM, -3.0f, properties).setRegistryName(RegisteryHolder.ENDERIUM_SHOVEL));
+            e.register(new BasicSword(ToolsMats.ENDERIUM, -2.4f, properties).setRegistryName(RegisteryHolder.ENDERIUM_SWORD));
         }
     }
 }
