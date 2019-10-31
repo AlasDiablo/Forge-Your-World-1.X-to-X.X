@@ -27,5 +27,14 @@
   "item.forgeyourworld.red_diamond_sword": "Red Diamond Sword",
   "item.forgeyourworld.enderium_ingot": "Enderium Ingot",
   "block.forgeyourworld.enderium_ore": "Enderium Ore",
-  "block.forgeyourworld.enderium_block": "Enderium Block"
+  "block.forgeyourworld.enderium_block": "Enderium Block",
+  "item.forgeyourworld.enderium_helmet": "Enderium helmet",
+  "item.forgeyourworld.enderium_chestplate": "Enderium chestplate",
+  "item.forgeyourworld.enderium_leggings": "Enderium leggings",
+  "item.forgeyourworld.enderium_boots": "Enderium boots",
+  "item.forgeyourworld.enderium_axe": "Enderium Axe",
+  "item.forgeyourworld.enderium_hoe": "Enderium Hoe",
+  "item.forgeyourworld.enderium_pickaxe": "Enderium Pickaxe",
+  "item.forgeyourworld.enderium_shovel": "Enderium Shovel",
+  "item.forgeyourworld.enderium_sword": "Enderium Sword"
 }
