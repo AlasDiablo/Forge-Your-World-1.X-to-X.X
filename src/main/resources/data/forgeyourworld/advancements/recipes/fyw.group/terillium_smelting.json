@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:ore/terillium"
+            "tag": "forge:ores/terillium"
           }
         ]
       }

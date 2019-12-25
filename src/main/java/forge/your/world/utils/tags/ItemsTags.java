@@ -12,12 +12,12 @@ public class ItemsTags {
 
     public static final Tag<Item> RAW_TERILLIUM = tag("forge", "gems/raw_terillium");
     public static final Tag<Item> TERILLIUM = tag("forge", "gems/terillium");
-    public static final Tag<Item> TERILLIUM_ORE = tag("forge", "ore/terillium");
+    public static final Tag<Item> TERILLIUM_ORE = tag("forge", "ores/terillium");
     public static final Tag<Item> TERILLIUM_BLOCK = tag("forge", "storage_blocks/terillium");
-    public static final Tag<Item> RED_DIAMOND_ORE = tag("forge", "ore/red_diamond");
+    public static final Tag<Item> RED_DIAMOND_ORE = tag("forge", "gems/red_diamond");
     public static final Tag<Item> RED_DIAMOND = tag("forge", "gems/red_diamond");
     public static final Tag<Item> RED_DIAMOND_BLOCK = tag("forge", "storage_blocks/red_diamond");
-    public static final Tag<Item> ENDERIUM_ORE = tag("forge", "ore/enderium");
+    public static final Tag<Item> ENDERIUM_ORE = tag("forge", "ores/enderium");
     public static final Tag<Item> ENDERIUM_BLOCK = tag("forge", "storage_blocks/enderium");
     public static final Tag<Item> ENDERIUM_INGOT = tag("forge", "ingots/enderium");
 

@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:ore/enderium"
+            "tag": "forge:ores/enderium"
           }
         ]
       }

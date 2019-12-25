@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:ore/red_diamond"
+            "tag": "forge:gems/red_diamond"
           }
         ]
       }

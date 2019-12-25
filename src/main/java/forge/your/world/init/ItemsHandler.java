@@ -110,6 +110,8 @@ public class ItemsHandler {
             IForgeRegistry<Item> e = event.getRegistry();
             e.register(new Item(properties).setRegistryName(RegisteryHolder.TERILLIUM_RAW));
             e.register(new Item(properties).setRegistryName(RegisteryHolder.TERILLIUM));
+            e.register(new Item(properties).setRegistryName(RegisteryHolder.RED_DIAMOND));
+            e.register(new Item(properties).setRegistryName(RegisteryHolder.ENDERIUM_INGOT));
             e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.TERILLIUM_HELMET));
             e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.TERILLIUM_CHESTPLATE));
             e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.TERILLIUM_LEGGINGS));
@@ -119,7 +121,6 @@ public class ItemsHandler {
             e.register(new BasicHoe(ToolsMats.TERILLIUM, -0.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_HOE));
             e.register(new BasicShovel(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SHOVEL));
             e.register(new BasicSword(ToolsMats.TERILLIUM, -2.4f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SWORD));
-            e.register(new Item(properties).setRegistryName(RegisteryHolder.RED_DIAMOND));
             e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_HELMET));
             e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_CHESTPLATE));
             e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_LEGGINGS));
@@ -129,7 +130,6 @@ public class ItemsHandler {
             e.register(new BasicHoe(ToolsMats.RED_DIAMOND, -0.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_HOE));
             e.register(new BasicShovel(ToolsMats.RED_DIAMOND, -3.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SHOVEL));
             e.register(new BasicSword(ToolsMats.RED_DIAMOND, -2.4f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SWORD));
-            e.register(new Item(properties).setRegistryName(RegisteryHolder.ENDERIUM_INGOT));
             e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.ENDERIUM_HELMET));
             e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.ENDERIUM_CHESTPLATE));
             e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.ENDERIUM_LEGGINGS));
