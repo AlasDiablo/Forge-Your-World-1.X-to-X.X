@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "K",
+    "B"
+  ],
+  "key": {
+    "K": {
+      "item": "forgeyourworld:kitchen_knife"
+    },
+    "B": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "item": "forgeyourworld:toast",
+    "count": 2
+  }
+}

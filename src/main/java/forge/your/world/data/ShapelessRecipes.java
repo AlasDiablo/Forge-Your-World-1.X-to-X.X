@@ -2,10 +2,8 @@ package forge.your.world.data;
 
 import forge.your.world.init.ItemsHandler;
 import forge.your.world.utils.tags.ItemsTags;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.RecipeProvider;
-import net.minecraft.data.ShapelessRecipeBuilder;
+import net.minecraft.data.*;
+import net.minecraft.item.Items;
 
 import java.util.function.Consumer;
 
@@ -20,6 +18,25 @@ public class ShapelessRecipes extends RecipeProvider {
 
     @Override
     protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
+        this.registerFoodsRecipes(consumer);
+        this.registerOresRecipes(consumer);
+    }
+
+    private void registerFoodsRecipes(Consumer<IFinishedRecipe> consumer) {
+        ShapelessRecipeBuilder.shapelessRecipe(ItemsHandler.FLOUR, 1)
+                .addIngredient(ItemsHandler.MORTAR_AND_PESTLE)
+                .addIngredient(Items.WHEAT)
+                .addCriterion("has_wheat", this.hasItem(Items.WHEAT))
+                .build(consumer);
+
+        ShapelessRecipeBuilder.shapelessRecipe(ItemsHandler.CEREALS, 1)
+                .addIngredient(ItemsHandler.CEREALS)
+                .addIngredient(Items.SUGAR)
+                .addCriterion("has_wheat", this.hasItem(Items.WHEAT))
+                .build(consumer);
+    }
+
+    private void registerOresRecipes(Consumer<IFinishedRecipe> consumer) {
         ShapelessRecipeBuilder.shapelessRecipe(ItemsHandler.TERILLIUM, 9)
                 .addIngredient(ItemsTags.TERILLIUM_BLOCK)
                 .addCriterion("has_terillium_block", this.hasItem(ItemsTags.TERILLIUM_BLOCK))

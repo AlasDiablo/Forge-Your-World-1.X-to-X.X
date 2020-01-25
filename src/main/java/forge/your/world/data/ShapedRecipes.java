@@ -7,6 +7,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;
 import net.minecraft.data.ShapedRecipeBuilder;
+import net.minecraft.item.Foods;
+import net.minecraft.item.Items;
 import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
@@ -25,6 +27,35 @@ public class ShapedRecipes extends RecipeProvider {
         this.registerTerilliumRecipes(consumer);
         this.registerRedDiamondRecipes(consumer);
         this.registerEnderiumRecipes(consumer);
+        this.registerFoodsRecipes(consumer);
+    }
+
+    private void registerFoodsRecipes(Consumer<IFinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.MORTAR_AND_PESTLE)
+                .key('B', Items.BOWL)
+                .key('S', Items.STICK)
+                .patternLine("S")
+                .patternLine("B")
+                .addCriterion("has_bowl", this.hasItem(Items.BOWL))
+                .addCriterion("has_stick", this.hasItem(Items.STICK))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.KITCHEN_KNIFE)
+                .key('I', Tags.Items.INGOTS_IRON)
+                .key('S', Items.STICK)
+                .patternLine("IS")
+                .addCriterion("has_iron", this.hasItem(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_stick", this.hasItem(Items.STICK))
+                .build(consumer);
+
+        ShapedRecipeBuilder.shapedRecipe(ItemsHandler.TOAST, 2)
+                .key('K', ItemsHandler.KITCHEN_KNIFE)
+                .key('B', Items.BREAD)
+                .patternLine("K")
+                .patternLine("B")
+                .addCriterion("has_kitchen_knife", this.hasItem(ItemsHandler.KITCHEN_KNIFE))
+                .addCriterion("has_bread", this.hasItem(Items.BREAD))
+                .build(consumer);
     }
 
     private void registerEnderiumRecipes(Consumer<IFinishedRecipe> consumer) {

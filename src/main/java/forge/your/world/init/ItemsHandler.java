@@ -2,6 +2,7 @@ package forge.your.world.init;
 
 import forge.your.world.ForgeYourWorld;
 import forge.your.world.items.*;
+import forge.your.world.utils.Foods;
 import forge.your.world.utils.materials.ArmorsMats;
 import forge.your.world.utils.materials.ToolsMats;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -94,6 +95,17 @@ public class ItemsHandler {
     @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.ENDERIUM_SHOVEL)
     public static Item ENDERIUM_SHOVEL;
 
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.TOAST)
+    public static Item TOAST;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.FLOUR)
+    public static Item FLOUR;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.CEREALS)
+    public static Item CEREALS;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.MORTAR_AND_PESTLE)
+    public static Item MORTAR_AND_PESTLE;
+    @ObjectHolder(RegisteryHolder.MOD_ID + ":" + RegisteryHolder.KITCHEN_KNIFE)
+    public static Item KITCHEN_KNIFE;
+
     /**
      * event use for make an instance
      */
@@ -106,39 +118,44 @@ public class ItemsHandler {
          */
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
-            Item.Properties properties = new Item.Properties().group(ForgeYourWorld.fywGroup);
             IForgeRegistry<Item> e = event.getRegistry();
-            e.register(new Item(properties).setRegistryName(RegisteryHolder.TERILLIUM_RAW));
-            e.register(new Item(properties).setRegistryName(RegisteryHolder.TERILLIUM));
-            e.register(new Item(properties).setRegistryName(RegisteryHolder.RED_DIAMOND));
-            e.register(new Item(properties).setRegistryName(RegisteryHolder.ENDERIUM_INGOT));
-            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.TERILLIUM_HELMET));
-            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.TERILLIUM_CHESTPLATE));
-            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.TERILLIUM_LEGGINGS));
-            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.TERILLIUM_BOOTS));
-            e.register(new BasicPickaxe(ToolsMats.TERILLIUM, -2.8f, properties).setRegistryName(RegisteryHolder.TERILLIUM_PICKAXE));
-            e.register(new BasicAxe(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_AXE));
-            e.register(new BasicHoe(ToolsMats.TERILLIUM, -0.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_HOE));
-            e.register(new BasicShovel(ToolsMats.TERILLIUM, -3.0f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SHOVEL));
-            e.register(new BasicSword(ToolsMats.TERILLIUM, -2.4f, properties).setRegistryName(RegisteryHolder.TERILLIUM_SWORD));
-            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_HELMET));
-            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_CHESTPLATE));
-            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_LEGGINGS));
-            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_BOOTS));
-            e.register(new BasicPickaxe(ToolsMats.RED_DIAMOND, -2.8f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_PICKAXE));
-            e.register(new BasicAxe(ToolsMats.RED_DIAMOND, -3.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_AXE));
-            e.register(new BasicHoe(ToolsMats.RED_DIAMOND, -0.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_HOE));
-            e.register(new BasicShovel(ToolsMats.RED_DIAMOND, -3.0f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SHOVEL));
-            e.register(new BasicSword(ToolsMats.RED_DIAMOND, -2.4f, properties).setRegistryName(RegisteryHolder.RED_DIAMOND_SWORD));
-            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.HEAD, properties).setRegistryName(RegisteryHolder.ENDERIUM_HELMET));
-            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.CHEST, properties).setRegistryName(RegisteryHolder.ENDERIUM_CHESTPLATE));
-            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.LEGS, properties).setRegistryName(RegisteryHolder.ENDERIUM_LEGGINGS));
-            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.FEET, properties).setRegistryName(RegisteryHolder.ENDERIUM_BOOTS));
-            e.register(new BasicPickaxe(ToolsMats.ENDERIUM, -2.8f, properties).setRegistryName(RegisteryHolder.ENDERIUM_PICKAXE));
-            e.register(new BasicAxe(ToolsMats.ENDERIUM, -3.0f, properties).setRegistryName(RegisteryHolder.ENDERIUM_AXE));
-            e.register(new BasicHoe(ToolsMats.ENDERIUM, -0.0f, properties).setRegistryName(RegisteryHolder.ENDERIUM_HOE));
-            e.register(new BasicShovel(ToolsMats.ENDERIUM, -3.0f, properties).setRegistryName(RegisteryHolder.ENDERIUM_SHOVEL));
-            e.register(new BasicSword(ToolsMats.ENDERIUM, -2.4f, properties).setRegistryName(RegisteryHolder.ENDERIUM_SWORD));
+            e.register(new Item(new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_RAW));
+            e.register(new Item(new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM));
+            e.register(new Item(new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND));
+            e.register(new Item(new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_INGOT));
+            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.HEAD, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_HELMET));
+            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.CHEST, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_CHESTPLATE));
+            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.LEGS, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_LEGGINGS));
+            e.register(new ArmorItem(ArmorsMats.TERILLIUM, EquipmentSlotType.FEET, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_BOOTS));
+            e.register(new BasicPickaxe(ToolsMats.TERILLIUM, -2.8f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_PICKAXE));
+            e.register(new BasicAxe(ToolsMats.TERILLIUM, -3.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_AXE));
+            e.register(new BasicHoe(ToolsMats.TERILLIUM, -0.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_HOE));
+            e.register(new BasicShovel(ToolsMats.TERILLIUM, -3.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_SHOVEL));
+            e.register(new BasicSword(ToolsMats.TERILLIUM, -2.4f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.TERILLIUM_SWORD));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.HEAD, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_HELMET));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.CHEST, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_CHESTPLATE));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.LEGS, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_LEGGINGS));
+            e.register(new ArmorItem(ArmorsMats.RED_DIAMOND, EquipmentSlotType.FEET, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_BOOTS));
+            e.register(new BasicPickaxe(ToolsMats.RED_DIAMOND, -2.8f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_PICKAXE));
+            e.register(new BasicAxe(ToolsMats.RED_DIAMOND, -3.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_AXE));
+            e.register(new BasicHoe(ToolsMats.RED_DIAMOND, -0.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_HOE));
+            e.register(new BasicShovel(ToolsMats.RED_DIAMOND, -3.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_SHOVEL));
+            e.register(new BasicSword(ToolsMats.RED_DIAMOND, -2.4f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.RED_DIAMOND_SWORD));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.HEAD, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_HELMET));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.CHEST, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_CHESTPLATE));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.LEGS, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_LEGGINGS));
+            e.register(new ArmorItem(ArmorsMats.ENDERIUM, EquipmentSlotType.FEET, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_BOOTS));
+            e.register(new BasicPickaxe(ToolsMats.ENDERIUM, -2.8f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_PICKAXE));
+            e.register(new BasicAxe(ToolsMats.ENDERIUM, -3.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_AXE));
+            e.register(new BasicHoe(ToolsMats.ENDERIUM, -0.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_HOE));
+            e.register(new BasicShovel(ToolsMats.ENDERIUM, -3.0f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_SHOVEL));
+            e.register(new BasicSword(ToolsMats.ENDERIUM, -2.4f, new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.ENDERIUM_SWORD));
+
+            e.register(new BasicFood(ForgeYourWorld.FYW_GROUP, Foods.TOAST).setRegistryName(RegisteryHolder.TOAST));
+            e.register(new Item(new Item.Properties().group(ForgeYourWorld.FYW_GROUP)).setRegistryName(RegisteryHolder.FLOUR));
+            e.register(new BasicFood(ForgeYourWorld.FYW_GROUP, Foods.CEREALS).setRegistryName(RegisteryHolder.CEREALS));
+            e.register(new MortarAndPestle().setRegistryName(RegisteryHolder.MORTAR_AND_PESTLE));
+            e.register(new KitchenKnife().setRegistryName(RegisteryHolder.KITCHEN_KNIFE));
         }
     }
 }

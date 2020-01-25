@@ -7,6 +7,7 @@ import net.minecraft.data.CookingRecipeBuilder;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 
 import java.util.function.Consumer;
@@ -30,5 +31,8 @@ public class SmeltingRecipes  extends RecipeProvider {
 
         CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlocksHandler.ENDERIUM_ORE), ItemsHandler.ENDERIUM_INGOT, 0.1f, 200)
                 .addCriterion("has_enderium_ore", this.hasItem(ItemsTags.ENDERIUM_ORE)).build(consumer, "enderium_smelting");
+
+        CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemsHandler.FLOUR), Items.BREAD, 0.1f, 200)
+                .addCriterion("has_flour", this.hasItem(ItemsHandler.FLOUR)).build(consumer, "bread_for_flour");
     }
 }

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "forgeyourworld:toast"
+    ]
+  },
+  "criteria": {
+    "has_kitchen_knife": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "forgeyourworld:kitchen_knife"
+          }
+        ]
+      }
+    },
+    "has_bread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bread"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "forgeyourworld:toast"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_kitchen_knife",
+      "has_bread",
+      "has_the_recipe"
+    ]
+  ]
+}

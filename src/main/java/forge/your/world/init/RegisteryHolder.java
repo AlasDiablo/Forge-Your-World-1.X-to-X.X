@@ -34,13 +34,18 @@ public class RegisteryHolder {
     static final String ENDERIUM_ORE           = "enderium_ore";
     static final String ENDERIUM_INGOT         = "enderium_ingot";
     static final String ENDERIUM_BLOCK         = "enderium_block";
-    static final String ENDERIUM_HELMET     = "enderium_helmet";
-    static final String ENDERIUM_CHESTPLATE = "enderium_chestplate";
-    static final String ENDERIUM_LEGGINGS   = "enderium_leggings";
-    static final String ENDERIUM_BOOTS      = "enderium_boots";
-    static final String ENDERIUM_PICKAXE    = "enderium_pickaxe";
-    static final String ENDERIUM_SHOVEL     = "enderium_shovel";
-    static final String ENDERIUM_SWORD      = "enderium_sword";
-    static final String ENDERIUM_AXE        = "enderium_axe";
-    static final String ENDERIUM_HOE        = "enderium_hoe";
+    static final String ENDERIUM_HELMET        = "enderium_helmet";
+    static final String ENDERIUM_CHESTPLATE    = "enderium_chestplate";
+    static final String ENDERIUM_LEGGINGS      = "enderium_leggings";
+    static final String ENDERIUM_BOOTS         = "enderium_boots";
+    static final String ENDERIUM_PICKAXE       = "enderium_pickaxe";
+    static final String ENDERIUM_SHOVEL        = "enderium_shovel";
+    static final String ENDERIUM_SWORD         = "enderium_sword";
+    static final String ENDERIUM_AXE           = "enderium_axe";
+    static final String ENDERIUM_HOE           = "enderium_hoe";
+    static final String TOAST                  = "toast";
+    static final String FLOUR                  = "flour";
+    static final String CEREALS                = "cereals";
+    static final String MORTAR_AND_PESTLE      = "mortar_and_pestle";
+    static final String KITCHEN_KNIFE          = "kitchen_knife";
 }

@@ -30,7 +30,7 @@ public class ForgeYourWorld {
     /**
      * creative tab use by the mod
      */
-    public static ItemGroup fywGroup = new ItemGroup("fyw.group") {
+    public static ItemGroup FYW_GROUP = new ItemGroup("fyw.group") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(BlocksHandler.TERILLIUM_BLOCK);

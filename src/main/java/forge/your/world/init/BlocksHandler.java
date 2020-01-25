@@ -64,7 +64,7 @@ public class BlocksHandler {
          */
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
-            Item.Properties properties = new Item.Properties().group(ForgeYourWorld.fywGroup);
+            Item.Properties properties = new Item.Properties().group(ForgeYourWorld.FYW_GROUP);
             IForgeRegistry<Item> e = event.getRegistry();
             e.register(new BlockItem(TERILLIUM_ORE, properties).setRegistryName(RegisteryHolder.TERILLIUM_ORE));
             e.register(new BlockItem(TERILLIUM_BLOCK, properties).setRegistryName(RegisteryHolder.TERILLIUM_BLOCK));
