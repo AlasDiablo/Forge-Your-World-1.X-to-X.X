@@ -1,3 +1,6 @@
+## 2.2.15b
+- fix missing loot table
+
 ## 2.2.15a
 - add toast
 - add flour
